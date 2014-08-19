@@ -1,0 +1,26 @@
+{
+  "name": "ho-config",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@phab.healtho.com/diffusion/CFG/config.git"
+  },
+  "author": "Philip Lee",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "chai": "~1.9.1"
+  },
+  "dependencies": {
+    "nconf": "~0.6.9",
+    "underscore": "~1.6.0"
+  }
+}

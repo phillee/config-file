@@ -1,0 +1,9 @@
+{
+  "INTEGER" : 1
+, "FLOAT"   : 0.5
+, "STRING"  : "hello world"
+, "OBJECT"  : 
+    {
+      "KEY" : "VALUE"
+    }
+}
