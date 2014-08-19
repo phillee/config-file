@@ -2,6 +2,7 @@ var fs     = require('fs')
   , nconf  = require('nconf')
   , _      = require('underscore')
   , config = new nconf.Provider()
+  , cwd    = process.cwd()
 
 module.exports = config;
 
@@ -10,7 +11,7 @@ config
 .env()
 
 // have to hack NODE_ENV here since we want defaults to take precedence after the file
-var configPath = __dirname + '/configs/' + (config.get('NODE_ENV') || 'dev') + '.json'
+var configPath = cwd + '/configs/' + (config.get('NODE_ENV') || 'dev') + '.json'
 
 console.log('Loading configs from ' + configPath);
 
@@ -25,7 +26,7 @@ config.defaults(
   {
     NODE_ENV : 'dev'
   , VERBOSE  : true
-  , ROOT_DIR : __dirname
+  , ROOT_DIR : cwd
   , PORT     : 3000
   }
 );
