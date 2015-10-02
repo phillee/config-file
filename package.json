@@ -1,5 +1,5 @@
 {
-  "name": "hto-config",
+  "name": "config-file",
   "version": "0.1.1",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@phab.healtho.com/diffusion/CFG/config.git"
+    "url": "ssh://git@github.com:phillee/config-file.git"
   },
   "author": "Philip Lee",
   "license": "BSD-2-Clause",
